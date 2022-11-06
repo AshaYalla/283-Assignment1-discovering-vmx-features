@@ -1,0 +1,1 @@
+cmd_/home/asha_yalla/283-linux/cmpe283-1.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T arch/x86/module.lds -o /home/asha_yalla/283-linux/cmpe283-1.ko /home/asha_yalla/283-linux/cmpe283-1.o /home/asha_yalla/283-linux/cmpe283-1.mod.o;  true
