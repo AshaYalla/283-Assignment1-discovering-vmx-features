@@ -49,6 +49,20 @@ Me and Asha worked together on this assignment. We checked the assignment detail
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200434838-ed480835-68e2-4c16-b0c1-2b44dc1a8180.png">
 
 
+#### Step 8: Run the make command, use insmod to insert the module to the kernel, and display the features of the considered register.
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200435184-2e9d1d10-827d-40ed-8754-2289678d3aef.png">
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200435198-ddf46e18-edfd-4804-9e34-472624a2dd93.png">
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200435205-d87aa64e-374e-4481-b214-e92a60aaf778.png">
+
+
+#### Step 9: After adding the remaining structs and definitions, you'll see the below output
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200435390-1bb3156b-47fc-48bb-a372-4463ecc5a87e.png">
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200435404-7af6fa33-bc0a-4e6c-996e-1e2448c6a573.png">
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200435413-a7a18a33-8a93-4565-a964-a9a0d74dfc7a.png">
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200435426-e8839ff6-cae2-4fdc-91df-608251ddef2e.png">
+
 
 
 
