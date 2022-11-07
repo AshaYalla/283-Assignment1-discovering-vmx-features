@@ -16,12 +16,10 @@ Me and Asha worked together on this assignment. We checked the assignment detail
 
 #### Step 1: Exported the current configuration of the files into the yaml file
 
-
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200433279-669d8950-1bbd-4161-9898-a02f3974f13d.png">
 
 
 #### Step 2: Updated the configuration file with details about nested virtualization
-
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200433576-5674d6c9-59ab-479c-82d0-ce7d519e53ad.png">
 
@@ -29,6 +27,29 @@ Me and Asha worked together on this assignment. We checked the assignment detail
 #### Step 3: Updated the VM configuration
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200433971-f94409fb-ea23-4ccc-9fe1-9a49e55ef545.png">
+
+
+#### Step 4: Determining if VM virtualization is activated: getting anything other than 0 indicates the nested virtualization is activated.
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200434312-094ff3d2-0b61-437d-8973-4e4b774e27ca.png">
+
+
+#### Step 5: To print the vmx feature of the register and the make file, cloned the git repository using the professor's program.
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200434601-33f2cd77-ada2-4595-b988-7c5ac8c9925d.png">
+
+
+#### Step 6: Installing the make module using the below command
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200434689-736bd2e6-aca1-4b3c-9e42-7e4025a8be8b.png">
+
+
+#### Step 7: Installed the linux header of the current kernel to run the make command
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200434838-ed480835-68e2-4c16-b0c1-2b44dc1a8180.png">
+
+
+
 
 
 
