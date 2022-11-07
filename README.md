@@ -1,7 +1,7 @@
 # Assignment 1
 
-** By Asha Yalla and Mounica Reddy Kandi **
->> This assignment was performed on Asha's GCP
+>> By Asha Yalla and Mounica Reddy Kandi 
+ This assignment was performed on Asha's GCP
 
 
 ### Asha's Contribution
