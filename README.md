@@ -14,9 +14,21 @@ Me and Asha worked together on this assignment. We checked the assignment detail
 
 ## Steps Followed:
 
-#### Step 1: Exported the current configuration of the files into the yaml file: 
+#### Step 1: Exported the current configuration of the files into the yaml file
 
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200433279-669d8950-1bbd-4161-9898-a02f3974f13d.png">
+
+
+#### Step 2: Updated the configuration file with details about nested virtualization
+
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200433576-5674d6c9-59ab-479c-82d0-ce7d519e53ad.png">
+
+
+#### Step 3: Updated the VM configuration
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200433971-f94409fb-ea23-4ccc-9fe1-9a49e55ef545.png">
+
 
 
