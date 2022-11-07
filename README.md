@@ -16,8 +16,7 @@ Me and Asha worked together on this assignment. We checked the assignment detail
 
 #### Step 1: Exported the current configuration of the files into the yaml file: 
 
-Text
 
-<img width="468" alt="image" src="https://user-images.githubusercontent.com/12370049/200432792-a85d1a2e-4810-4af5-bf54-3dad0d613399.png">
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200433279-669d8950-1bbd-4161-9898-a02f3974f13d.png">
 
 
