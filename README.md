@@ -66,11 +66,13 @@ Me and Asha worked together on this assignment. We checked the assignment detail
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200435426-e8839ff6-cae2-4fdc-91df-608251ddef2e.png">
 
 
-Reference for checking secondary processor
+
+
+#### Reference for checking secondary processor
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/99624135/200435581-8d8739e8-3dae-4137-ae45-cf77e3542556.png">
 
-Reference for Checking Tertiary processor
+##### Reference for Checking Tertiary processor
 
 <img width="312" alt="image" src="https://user-images.githubusercontent.com/99624135/200435667-62d323b7-0e05-4c63-ad39-52d91a9d730d.png">
 
