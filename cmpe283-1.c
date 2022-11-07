@@ -38,6 +38,71 @@ struct capability_info pinbased[5] =
 	{ 7, "Process Posted Interrupts" }
 };
 
+struct capability_info exitCtrl[17] =
+{
+	{ 2, "Save debug controls" },
+	{ 9, "Host address-space size" },
+	{ 12, "Load IA32_PERF_GLOBAL_CTRL" },
+	{ 15, "Acknowledge interrupt on exit" },
+	{ 18, "Save IA32_PAT" },
+	{ 19, "Load IA32_PAT" },
+	{ 20, "Save IA32_EFER" },
+	{ 21, "Load IA32_EFER" },
+	{ 22, "Save VMX-preemption timer value"},
+	{ 23, "Clear IA32_BNDCFGS" },
+	{ 24, "Conceal VMX from PT" },
+	{ 25, "Clear IA32_RTIT_CTL" },
+	{ 26, "Clear IA32_LBR_CTL" },
+	{ 28, "Load CET state" },
+	{ 29, "Load PKRS" },
+	{ 30, "Save IA32_PERF_GLOBAL_CTL" },
+	{ 31, "Activate secondary controls" }
+};
+
+
+struct capability_info entryCtrl[13] =
+{
+	{ 2, "Load debug controls" },
+	{ 9, "IA-32e mode guest" },
+	{ 10, "Entry to SMM" },
+	{ 11, "Deactivate dualmonitor treatment" },
+	{ 13, "Load IA32_PERF_GLOBAL_CTRL" },
+	{ 14, "Load IA32_PAT" },
+	{ 15, "Load IA32_EFER" },
+	{ 16, "Load IA32_BNDCFGS" },
+	{ 17, "Conceal VMX from PT" },
+	{ 18, "Load IA32_RTIT_CTL" },
+	{ 20, "Load CET state" },
+	{ 21, "Load guest IA32_LBR_CTL" },
+	{ 22, "Load PKRS" }
+};
+
+struct capability_info procbased[22] =
+{
+	{ 2, "Interrupt Window Exiting" },
+	{ 3, "Use TSC Offsetting" },
+	{ 7, "HLT Exiting" },
+	{ 9, "INVLPG Exiting" },
+	{ 10, "MWAIT Exiting" },
+	{ 11, "RDPMC Exiting" },
+	{ 12, "RDTSC Exiting" },
+	{ 15, "CR3 Load Exiting" },
+	{ 16, "CR3 Store Exiting" },
+	{ 17, "Activate Tertiary Controls" },
+	{ 19, "CR8 Load Exiting" },
+	{ 20, "CR8 Store Exiting" },
+	{ 21, "Use TPR Shadow" },
+	{ 22, "NMI Window Exiting" },
+	{ 23, "MOV-DR Exiting" },
+	{ 24, "Unconditional I/O Exiting" },
+	{ 25, "Use I/O Bitmaps" },	
+	{ 27, "Monitor Trap Flag" },
+	{ 28, "Use MSR Bitmaps" },
+	{ 29, "MONITOR Exiting" },
+	{ 30, "PAUSE Exiting" },
+	{ 31, "Activate Secondary Controls" }
+};
+
 /*
  * report_capability
  *
@@ -85,6 +150,24 @@ detect_vmx_features(void)
 	pr_info("Pinbased Controls MSR: 0x%llx\n",
 		(uint64_t)(lo | (uint64_t)hi << 32));
 	report_capability(pinbased, 5, lo, hi);
+
+
+	rdmsr(IA32_VMX_EXIT_CTLS, lo, hi);
+	pr_info("Exit Controls MSR: 0x%llx\n",
+		(uint64_t)(lo | (uint64_t)hi << 32));
+	report_capability(exitCtrl, 17, lo, hi);
+	
+
+	rdmsr(IA32_VMX_ENTRY_CTLS, lo, hi);
+	pr_info("Entry Controls MSR: 0x%llx\n",
+		(uint64_t)(lo | (uint64_t)hi << 32));
+	report_capability(entryCtrl, 13, lo, hi);
+
+	rdmsr(IA32_VMX_PROCBASED_CTLS, lo, hi);
+	pr_info("Procbased Controls MSR: 0x%llx\n",
+		(uint64_t)(lo | (uint64_t)hi << 32));
+	report_capability(procbased, 22, lo, hi);
+    pr_info("\n");
 }
 
 /*
